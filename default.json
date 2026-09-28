@@ -1,0 +1,43 @@
+{
+  "show": "Friday Night Comedy",
+  "presets": [
+    {
+      "name": "Act 1",
+      "duration": 480,
+      "countDown": true,
+      "baseColor": "#00c832",
+      "colorStops": [
+        { "atSecs": 480, "color": "#00c832" },
+        { "atSecs": 60,  "color": "#ffaa00" },
+        { "atSecs": 10,  "color": "#ff2222" }
+      ],
+      "milestones": [
+        { "name": "5 min", "atSecs": 300, "trigger": "auto",
+          "color": "#ffaa00", "cornerPattern": "fastBlink",
+          "borderPulse": true, "flashFrame": true, "durationMs": 800 },
+        { "name": "Applause", "atSecs": 0, "trigger": "manual",
+          "color": "#ffffff", "cornerPattern": "solid",
+          "borderPulse": false, "flashFrame": true, "durationMs": 1500 }
+      ],
+      "onZero": { "action": "continueNegative", "color": "#ff2222",
+                  "cornerPattern": "solid", "borderCrawl": true }
+    },
+    {
+      "name": "Break",
+      "duration": 120,
+      "countDown": true,
+      "baseColor": "#888888",
+      "colorStops": [ { "atSecs": 120, "color": "#888888" }, { "atSecs": 10, "color": "#ffaa00" } ],
+      "milestones": [],
+      "onZero": { "action": "stop", "color": "#ffffff", "cornerPattern": "solid", "borderCrawl": false }
+    },
+    {
+      "name": "Stopwatch",
+      "duration": 0,
+      "countDown": false,
+      "baseColor": "#00c8c8",
+      "colorStops": [ { "atSecs": 0, "color": "#00c8c8" } ],
+      "milestones": []
+    }
+  ]
+}
