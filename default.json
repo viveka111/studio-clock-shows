@@ -26,7 +26,7 @@
       "name": "Break",
       "duration": 120,
       "countDown": true,
-      "baseColor": "#888888",
+      "baseColor": "#FF0000",
       "colorStops": [ { "atSecs": 120, "color": "#888888" }, { "atSecs": 10, "color": "#ffaa00" } ],
       "milestones": [],
       "onZero": { "action": "stop", "color": "#ffffff", "cornerPattern": "solid", "borderCrawl": false }
